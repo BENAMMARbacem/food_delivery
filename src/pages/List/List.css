@@ -1,0 +1,83 @@
+/* List.css */
+
+.list {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Adjust as needed */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+  }
+
+  .list-table-format.title {
+    display: flex; /* Ensure horizontal alignment */
+    align-items: center; /* Center content vertically */
+    padding: 4px 0; /* Add some padding for spacing */
+    border-bottom: 4px solid #ddd; /* Add a bottom border for separation */
+    background-color: #eee; /* Light background color */
+    font-weight: bold; /* Bold text for emphasis */
+  }
+  
+  .list-table-format.title b { /* Style the bold elements within the title */
+    flex: 1; /* Distribute space evenly among items */
+    text-align: center; /* Center text within each column */
+    gap : 30px;/* Add some margin for spacing between columns */
+  }
+  .list-table-format img{
+    width : 50px;
+  }
+  .list h2,
+  .list p {
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+  }
+  
+  .list h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .list-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .list-table-format {
+    display: grid;
+    align-items: center;
+    padding: 12px 15px;
+    font-size : 13px;
+    border : 1px solid #cacaca ;
+    gap : 10px ;
+    grid-template-columns : 1fr 1fr 1fr 1fr 1fr ;
+  }
+  
+  .list-table-format:first-child { /* Title row styling */
+    background-color: #eee;
+    font-weight: bold;
+  }
+  
+  .list-table-format img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover; /* Maintain aspect ratio */
+    border-radius: 50%; /* Circular image */
+    margin-right: 10px;
+  }
+  
+  .list-table-format p {
+    flex: 1; /* Distribute space evenly */
+    margin: 0 5px;
+  }
+  
+  .list-table-format p.action {
+    text-align: right; /* Align action button to the right */
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .list-table-format p.action:hover {
+    color: #f00; /* Red on hover for a clear indication */
+  }
+  
